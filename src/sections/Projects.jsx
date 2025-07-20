@@ -11,9 +11,7 @@ import {
 const projects = [
   {
     projectId: "1",
-    thumbImgs: [
-      "/assets/proj-thumbs/towngas-lifestyle.png",
-    ],
+    thumbImgs: ["/assets/proj-thumbs/towngas-lifestyle.png"],
     title: "Towngas Lifestyle",
     tags: ["Astro", "SSG", "SSR", "React", "Multi-language"],
     overview:
@@ -26,9 +24,7 @@ const projects = [
   },
   {
     projectId: "2",
-    thumbImgs: [
-      "/assets/proj-thumbs/horizon-banking.png",
-    ],
+    thumbImgs: ["/assets/proj-thumbs/horizon-banking.png"],
     title: "Horizon Banking",
     tags: [
       "Next.js",
@@ -39,8 +35,12 @@ const projects = [
       "Restful API Integration",
     ],
     overview:
-      "A full-stack financial platform that empowers users to connect their bank accounts, monitor transactions, transfer money between platform users, and generate insightful financial reports.",
-    features: null,
+      "A full-stack financial platform enabling users to perform a range of banking operations.",
+    features: [
+      "Connect bank accounts",
+      "Transfer money between platform users",
+      "Generate financial reports",
+    ],
     challenges: null,
     githubLink: "https://github.com/Marcussyl/banking",
     liveSiteLink: "https://banking-two-ochre.vercel.app/sign-in",
@@ -48,14 +48,16 @@ const projects = [
   },
   {
     projectId: "3",
-    thumbImgs: [
-      "/assets/proj-thumbs/mark-sixer.png",
-    ],
+    thumbImgs: ["/assets/proj-thumbs/mark-sixer.png"],
     title: "Mark Sixer",
     tags: ["React", "Vite", "Puppeteer", "OCR", "Netlify"],
     overview:
-      "Mark Sixer is designed to streamline access to Mark Six lottery results. The app automatically scrapes the latest lottery results from official websites, and leverages OCR technology to extract numerical data from result images.",
-    features: null,
+      "Mark Sixer is designed to streamline access to Mark Six lottery results.",
+    features: [
+      "Scrapes the latest lottery results from official websites",
+      "Extract numerical data from result images",
+      "Backup records",
+    ],
     challenges: null,
     githubLink: "https://github.com/Marcussyl/mark-sixer",
     liveSiteLink: "https://marcussyl.github.io/mark-sixer/",
@@ -67,8 +69,12 @@ const projects = [
     title: "Jammming",
     tags: ["React", "OAuth2", "Spotify API"],
     overview:
-      "A sleek, user-friendly web app built with React that empowers users to search for tracks, artists, and albums through the Spotify API. Once users find their favorite songs, they can effortlessly assemble a custom playlist and save it directly to their Spotify account.",
-    features: null,
+      "A sleek, user-friendly React web app for creating and saving custom Spotify playlists.",
+    features: [
+      "Search for tracks, artists, and albums",
+      "Assemble a custom playlist",
+      "Save playlist Spotify account",
+    ],
     challenges: null,
     githubLink: "https://github.com/Marcussyl/jamming",
     liveSiteLink: "https://marcussyl.github.io/jamming/",
@@ -93,8 +99,12 @@ const projects = [
     title: "Big Two",
     tags: ["Java", "Java Swing", "OOP", "Real-time Game Validation"],
     overview:
-      "A Java-based desktop application that simulates the popular East Asian card game in an intuitive, interactive format. Built with Java Swing, the project delivers a familiar gaming experience through a custom graphical user interface, complete with card visuals, player turns, and game logic.",
-    features: null,
+      "A Java-based desktop application that simulates the popular East Asian card game in an intuitive, interactive format.",
+    features: [
+      "Multiplayer mode",
+      "Score tracking and game history",
+      "Hint system to assist new players",
+    ],
     challenges: null,
     githubLink: "https://github.com/Marcussyl/big-two",
     liveSiteLink: null,

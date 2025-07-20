@@ -63,7 +63,7 @@ const ProjectDetailCard = ({
               <div className="flex gap-10">
                 {features && (
                   <div className="features flex flex-col gap-2">
-                    <h3 className="proj-subtitle">Key Features</h3>
+                    <h3 className="text-lg text-grayish-white font-bold">Key Features</h3>
                     {features.map((feature, index) => (
                       <div className="feature-item flex gap-2" key={index}>
                         <img
