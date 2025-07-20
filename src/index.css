@@ -48,11 +48,11 @@
     }
 
     .tag {
-      @apply flex gap-2 py-1 px-4 border-[1px] border-main-purple rounded-[20px] w-fit
+      @apply flex gap-2 py-1 px-4 border-[1px] border-sharp-purple rounded-[20px] w-fit
     }
 
     .tag p {
-      @apply text-sm
+      @apply text-sm text-sharp-purple
     }
 
     .tag img {

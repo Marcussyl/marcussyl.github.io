@@ -1,7 +1,7 @@
 import { HeroTag } from "@/components/HeroTag";
 import { motion } from "motion/react";
 import { useTypewriter } from "@/components/useTypewriter";
-import TextRotate from "@/components/TextRotate";
+import TextRotate from "@/fancy/components/text/text-rotate";
 
 export const HeroSection = () => {
   const displayText = useTypewriter(
@@ -15,21 +15,29 @@ export const HeroSection = () => {
         <p>Hi there</p>
         <img src="/assets/tag-icons/shake-hand.png" />
       </div>
-      {/* <TextRotate/> */}
       <div className="gradient-text">
         <h2 className="text-xl">I'm Marcus,</h2>
-        <h1 className="section-title text-4xl leading-relaxed">
+        {/* <h1 className="section-title text-4xl leading-relaxed">
           Web Developer
-        </h1>
+        </h1> */}
+        <TextRotate
+          texts={["Web Developer", "Vibe Coder"]}
+          mainClassName="text-4xl text-center text-transparent px-2 sm:px-2 md:px-3 overflow-hidden justify-center rounded-lg"
+          staggerFrom={"first"}
+          initial={{ y: "10%" }}
+          animate={{ y: 0 }}
+          exit={{ y: "-10%" }}
+          staggerDuration={0.035}
+          splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+          transition={{ type: "spring", damping: 30, stiffness: 400 }}
+          rotationInterval={4000}
+        />
       </div>
       <p className="section-desc typewriter-effect inline-block max-w-[900px]">
         {displayText}
         <span className="animate-blinking-caret inline-block h-3 w-3 border-b-2"></span>
       </p>
-      <a
-        href="/assets/Web Developer.pdf"
-        download="Marcus_Sze_CV.pdf"
-      >
+      <a href="/assets/Web Developer.pdf" download="Marcus_Sze_CV.pdf">
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
@@ -65,30 +73,21 @@ export const HeroSection = () => {
           target="_blank"
           className="border-main-purple flex h-[40px] w-[40px] items-center justify-center rounded-full border-1 p-2"
         >
-          <img
-            src="/assets/social-media/email.png"
-            alt="email icon"
-          />
+          <img src="/assets/social-media/email.png" alt="email icon" />
         </a>
         <a
           href="https://github.com/Marcussyl"
           target="_blank"
           className="border-main-purple flex h-[40px] w-[40px] items-center justify-center rounded-full border-1 p-2"
         >
-          <img
-            src="/assets/social-media/github.png"
-            alt="github icon"
-          />
+          <img src="/assets/social-media/github.png" alt="github icon" />
         </a>
         <a
           href="https://www.linkedin.com/in/marcus-sze-3538ba229/"
           target="_blank"
           className="border-main-purple flex h-[40px] w-[40px] items-center justify-center rounded-full border-1 p-2"
         >
-          <img
-            src="/assets/social-media/linkedin.png"
-            alt="linkedin icon"
-          />
+          <img src="/assets/social-media/linkedin.png" alt="linkedin icon" />
         </a>
       </div>
       {/* <HeroTag
