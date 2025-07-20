@@ -1,4 +1,4 @@
-# Marcus Sze - Software Engineer Portfolio
+# Marcus Sze - Web Developer Portfolio
 
 A modern, responsive portfolio website showcasing my skills, projects, and experience as a web developer. Built with React and Tailwind CSS, featuring smooth animations and a clean, professional design.
 
