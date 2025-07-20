@@ -227,10 +227,10 @@ export const Contacts = () => {
             >
               <div className="inner border-main-purple text-grayish-white flex !cursor-pointer items-center justify-center gap-2 rounded-[10px] border-2 border-dashed p-2">
                 {"Send Message"}
-                {/* <img
-                  src="/assets/send.svg"
-                  alt="plane icon"
-                /> */}
+                <img
+                  src="/assets/send-white.svg"
+                  alt="right arrow icon"
+                />
               </div>
             </motion.button>
             {/* Show email send state message */}
