@@ -12,8 +12,7 @@ const techStackItems = [
     imgAlt: "vite",
   },
   {
-    imgPath:
-      "/assets/tech-icos/ico-react-native.png",
+    imgPath: "/assets/tech-icos/ico-react-native.png",
     imgAlt: "react native",
   },
   {
@@ -25,12 +24,7 @@ const techStackItems = [
     imgAlt: "jquery",
   },
   {
-    imgPath: "/assets/tech-icos/ico-redux.png",
-    imgAlt: "redux",
-  },
-  {
-    imgPath:
-      "/assets/tech-icos/ico-tailwindcss.png",
+    imgPath: "/assets/tech-icos/ico-tailwindcss.png",
     imgAlt: "tailwind css",
   },
   {
@@ -64,6 +58,10 @@ const techStackItems = [
   {
     imgPath: "/assets/tech-icos/ico-net.png",
     imgAlt: "net",
+  },
+  {
+    imgPath: "/assets/tech-icos/ico-postman.png",
+    imgAlt: "postman",
   },
   {
     imgPath: "/assets/tech-icos/ico-umbraco.png",
