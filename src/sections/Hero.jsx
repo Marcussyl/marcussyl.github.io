@@ -37,7 +37,7 @@ export const HeroSection = () => {
         {displayText}
         <span className="animate-blinking-caret inline-block h-3 w-3 border-b-2"></span>
       </p>
-      <a href="/assets/Web Developer.pdf" download="Marcus_Sze_CV.pdf">
+      <a href="/assets/Marcus_Sze_CV.pdf" download="Marcus_Sze_CV.pdf">
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
