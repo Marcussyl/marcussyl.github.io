@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import "tailwindcss";
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+@layer theme, base, components, utilities;
+
+@theme {
+    --color-sharp-purple: #844EF2;
+    --color-main-purple: #5f3aa6;
+    --color-light-purple: #9772e2;
+    --color-dark-purple: #0d061a;
+    --color-ambient-purple: #1e103a;
+    --color-grayish-white: rgb(181,178,186);
+
+    --font-pacifico: "Pacifico", cursive;
+
+    --animate-blinking-caret: blinking-caret .5s infinite;
+
+    --breakpoint-navbar: 1165px;
+
+    @keyframes blinking-caret {
+      from, to { border-color: transparent }
+      50% { border-color: var(--color-main-purple) }
+    }
+}
+
+@layer components {
+    /* global classes start */
+
+    .section-content {
+        @apply max-w-[1700px] py-15 px-7 mx-auto block;
+    }
+    
+    .content-container {
+        @apply max-w-[1700px] px-5 mx-auto block;
+    }
+
+    .section-title {
+      @apply text-4xl text-center
+    }
+
+    .section-desc {
+      @apply text-grayish-white text-balance text-center text-lg
+    }
+
+    .tag {
+      @apply flex gap-2 py-1 px-4 border-[1px] border-main-purple rounded-[20px] w-fit
+    }
+
+    .tag p {
+      @apply text-sm
+    }
+
+    .tag img {
+      @apply object-contain w-[16px]
+    }
+
+    .glowing-btn {
+      @apply bg-gradient-to-b from-[#3d2769] via-[#7d64b1] to-[#854ef2] px-0.5 drop-shadow-2xl relative
+    }
+
+    .glowing-btn .inner {
+      @apply bg-[#382167] p-2 text-white border-b-[#854ef2] border-b-2 text-sm flex gap-2 items-center drop-shadow-xl drop-shadow-indigo-500
+    }
+
+    .gradient-text {
+        @apply bg-gradient-to-r from-[#864ff3] via-[#9772e2] to-[#ab97d1] bg-clip-text text-transparent;
+    }
+
+    .round-btn {
+      @apply relative cursor-pointer object-contain p-[12px] border-1 border-main-purple rounded-full bg-[rgba(56,33,102,25%)] w-[40px]
+    }
+
+    /* .round-btn:hover {
+      @apply border-red-500
+    } */
+
+    /* global classes end */
+
+    /* Nav Bar start */
+
+    /* .section-linker {
+      @apply text-grayish-white hover:text-light-purple transition-colors text-lg focus:outline-none py-4 font-medium
+    }
+
+    .section-linker.active {
+      @apply underline font-bold text-light-purple underline-offset-3
+    } */
+
+    /* Nav Bar end */
+
+    /* Hero Section start */
+  
+    /* Hero Section end */
+
+    /* Tech Stack Section start */
+
+    #tech-stack .tech-stack-col {
+      @apply self-start
+    }
+
+    #tech-stack .divider {
+      @apply w-[1px] h-[50%] border-l-2 border-[#3a226c] border-dashed relative top-[-10px]
+    }
+
+    #tech-stack .tech-stack-col .tech-stack-col-title {
+      @apply font-bold
+    }
+
+    #tech-stack .tech-stack-col ul {
+      @apply text-base list-disc marker:text-main-purple ml-[13px]
+    }
+
+    #tech-stack .tech-stack-col li {
+      @apply mb-1
+    }
+
+    /* Tech Stack Section end */
+
+    /* Projects Showcase Section start */
+
+    #projects .expandable-card {
+      @apply p-4 border-2 border-dashed border-main-purple rounded-md bg-[rgba(133,78,243,10%)] text-white relative transition-all duration-200 ease-out cursor-pointer w-full md:w-1/4
+      /* @apply flex-1 p-4 border-2 border-dashed border-main-purple rounded-md bg-[rgba(133,78,243,10%)] text-white relative hover:shadow-xl hover:shadow-indigo-500 ease-out transition-all duration-200 */
+    }
+
+    #projects .expandable-card:hover {
+      box-shadow: 0 0 20px rgba(133, 78, 243, 0.3),
+                0 0 40px rgba(133, 78, 243, 0.2),
+                0 0 60px rgba(133, 78, 243, 0.1);
+      transform: translateY(-2px);
+      /* border-color: #9772e2; */
+    }
+
+    #projects .proj-thumb {
+      @apply w-full object-contain rounded
+    }
+
+    /* #projects .proj-tag {
+      @apply text-sm border-1 border-grayish-white py-1 px-[13px] rounded-[18px] whitespace-nowrap text-grayish-white
+    } */
+
+    /* #projects .proj-title {
+      @apply text-lg text-grayish-white
+    } */
+
+
+    /* #projects .proj-detail-card .proj-title {
+      @apply text-2xl font-bold text-sharp-purple
+    } */
+
+    /* #projects .proj-detail-card .proj-subtitle {
+      @apply text-lg font-bold text-grayish-white
+    } */
+
+    /* #projects .proj-detail-card .proj-desc {
+      @apply text-base text-grayish-white
+    } */
+
+    #projects .feature-item {
+      @apply flex gap-2
+    }
+
+    #projects .feature-item img {
+      @apply object-contain w-[16px]
+    }
+
+    /* Projects Showcase Section start */
+
+
+    /* Mileston Section start */
+    #milestone .accordion {
+      @apply flex flex-col md:flex-row gap-3 md:gap-7 justify-center w-[100%]
+    }
+    #milestone .accordion .thumbnails {
+      @apply flex-1
+    }
+    /* #milestone .accordion .thumbnails .swiper {
+      @apply w-[50%]
+    } */
+    #milestone .accordion .details {
+      @apply flex-1
+    }
+    #milestone .accordion .details .accordion-title {
+      @apply flex gap-2 items-center justify-between text-lg py-3 relative font-bold
+    }
+    #milestone .accordion .details .accordion-item .accordion-title {
+      @apply border-b-[1px] border-main-purple cursor-pointer
+    }
+    /* control accordion thumbnail */
+    /* #milestone .accordion .thumbnails img {
+      @apply hidden object-contain w-full rounded py-3
+    } */
+    #milestone .accordion[data-active-accordion="aws-practitioner"] .thumbnails img[data-achievement="aws-practitioner"],
+    #milestone .accordion[data-active-accordion="hackathon"] .thumbnails img[data-achievement="hackathon"],
+    #milestone .accordion[data-active-accordion="java-competition"] .thumbnails img[data-achievement="java-competition"]
+    {
+      @apply block
+    }
+
+    /* control accordion content */
+    #milestone .accordion .details .accordion-content {
+      @apply hidden py-3 text-grayish-white text-base
+    }
+    #milestone .accordion .details .accordion-content[data-achievement="aws-practitioner"] {
+      @apply block
+    }
+    /* #milestone .accordion[data-active-accordion="aws-practitioner"] .details .accordion-content[data-achievement="aws-practitioner"],
+    #milestone .accordion[data-active-accordion="hackathon"] .details .accordion-content[data-achievement="hackathon"],
+    #milestone .accordion[data-active-accordion="java-competition"] .details .accordion-content[data-achievement="java-competition"]
+    {
+      @apply h-70 py-0
+    } */
+
+    /* control accordion title arrow icon */
+    #milestone .accordion[data-active-accordion="aws-practitioner"] .details .accordion-title[data-achievement="aws-practitioner"] img,
+    #milestone .accordion[data-active-accordion="hackathon"] .details .accordion-title[data-achievement="hackathon"] img,
+    #milestone .accordion[data-active-accordion="java-competition"] .details .accordion-title[data-achievement="java-competition"] img
+    {
+      @apply transform rotate-180 transition-transform duration-200 ease-linear
+    }
+
+    .active-bullet {
+      @apply bg-sky-400
+    }
+
+    /* Mileston Section end */
+
+    /* Contacts Section start */
+    #contact .input-wrapper {
+      @apply bg-linear-to-r from-[#854EF3] to-[#AC9AD0] p-[1.5px] rounded-[10px]
+    }
+
+    #contact label {
+      @apply text-grayish-white mb-1 block
+    }
+
+    #contact input, textarea {
+      background: linear-gradient(to bottom right, #1f0c44, #271746);
+      @apply block w-full rounded-[10px] p-2 text-grayish-white text-base
+    }
+
+    #contact .social-medias-container {
+      @apply flex gap-4 items-center justify-center mt-6
+    }
+
+    #contact .social-medias-container a {
+      @apply flex justify-center items-center w-[40px] h-[40px] p-2 border-1 rounded-full border-main-purple
+    }
+
+    #contact .social-medias-container a img {
+      @apply object-contain 
+    }
+
+    #contact .namecard-container span img {
+      width: 0px;
+      height: 60px;
+      transition: width .3s ease-out;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    #contact .namecard-container span:hover img {
+      width: 100px;
+    }
+    /* Contacts Section end */
+
+
+    .grid-item {
+      @apply w-[70px] h-[70px] p-6 text-center rounded relative justify-self-center self-center border-[1px] border-indigo-400
+    }
+    
+    .flex-item {
+      @apply h-[90%] w-[2px] bg-gradient-to-b from-transparent via-indigo-600 to-transparent
+    }
+    
+    .flex-item-row {
+      @apply w-[90%] h-[2px] bg-gradient-to-r from-transparent via-indigo-600 to-transparent
+    }
+
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: #0d061a;
+    color: #9166e9;
+}
+
+@theme inline {
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+    --color-chart-1: var(--chart-1);
+    --color-chart-2: var(--chart-2);
+    --color-chart-3: var(--chart-3);
+    --color-chart-4: var(--chart-4);
+    --color-chart-5: var(--chart-5);
+    --color-sidebar: var(--sidebar);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+    --radius: 0.625rem;
+    --background: oklch(1 0 0);
+    --foreground: oklch(0.145 0 0);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.145 0 0);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.145 0 0);
+    --primary: oklch(0.205 0 0);
+    --primary-foreground: oklch(0.985 0 0);
+    --secondary: oklch(0.97 0 0);
+    --secondary-foreground: oklch(0.205 0 0);
+    --muted: oklch(0.97 0 0);
+    --muted-foreground: oklch(0.556 0 0);
+    --accent: oklch(0.97 0 0);
+    --accent-foreground: oklch(0.205 0 0);
+    --destructive: oklch(0.577 0.245 27.325);
+    --border: oklch(0.922 0 0);
+    --input: oklch(0.922 0 0);
+    --ring: oklch(0.708 0 0);
+    --chart-1: oklch(0.646 0.222 41.116);
+    --chart-2: oklch(0.6 0.118 184.704);
+    --chart-3: oklch(0.398 0.07 227.392);
+    --chart-4: oklch(0.828 0.189 84.429);
+    --chart-5: oklch(0.769 0.188 70.08);
+    --sidebar: oklch(0.985 0 0);
+    --sidebar-foreground: oklch(0.145 0 0);
+    --sidebar-primary: oklch(0.205 0 0);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.97 0 0);
+    --sidebar-accent-foreground: oklch(0.205 0 0);
+    --sidebar-border: oklch(0.922 0 0);
+    --sidebar-ring: oklch(0.708 0 0);
+
+    /* swiper start */
+
+    --swiper-theme-color: #5f3aa6 !important;
+    --swiper-navigation-color: #5f3aa6;
+    --swiper-pagination-color: #5f3aa6;
+    --swiper-pagination-bullet-inactive-color: #5f3aa6;
+    --swiper-pagination-bullet-inactive-opacity: 0.5;
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+    --swiper-navigation-top-offset: 93%;
+    --swiper-navigation-size: 20px !important;
+    --swiper-navigation-sides-offset: 35%;
+
+    /* swiper end */
+}
+
+.dark {
+    --background: oklch(0.145 0 0);
+    --foreground: oklch(0.985 0 0);
+    --card: oklch(0.205 0 0);
+    --card-foreground: oklch(0.985 0 0);
+    --popover: oklch(0.205 0 0);
+    --popover-foreground: oklch(0.985 0 0);
+    --primary: oklch(0.922 0 0);
+    --primary-foreground: oklch(0.205 0 0);
+    --secondary: oklch(0.269 0 0);
+    --secondary-foreground: oklch(0.985 0 0);
+    --muted: oklch(0.269 0 0);
+    --muted-foreground: oklch(0.708 0 0);
+    --accent: oklch(0.269 0 0);
+    --accent-foreground: oklch(0.985 0 0);
+    --destructive: oklch(0.704 0.191 22.216);
+    --border: oklch(1 0 0 / 10%);
+    --input: oklch(1 0 0 / 15%);
+    --ring: oklch(0.556 0 0);
+    --chart-1: oklch(0.488 0.243 264.376);
+    --chart-2: oklch(0.696 0.17 162.48);
+    --chart-3: oklch(0.769 0.188 70.08);
+    --chart-4: oklch(0.627 0.265 303.9);
+    --chart-5: oklch(0.645 0.246 16.439);
+    --sidebar: oklch(0.205 0 0);
+    --sidebar-foreground: oklch(0.985 0 0);
+    --sidebar-primary: oklch(0.488 0.243 264.376);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.269 0 0);
+    --sidebar-accent-foreground: oklch(0.985 0 0);
+    --sidebar-border: oklch(1 0 0 / 10%);
+    --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+}
