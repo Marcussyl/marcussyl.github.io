@@ -4,89 +4,89 @@ import { motion } from "motion/react";
 const techStackItems = [
   // frontend
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-react.png",
+    imgPath: "/assets/tech-icos/ico-react.png",
     imgAlt: "react",
   },
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-vite.png",
+    imgPath: "/assets/tech-icos/ico-vite.png",
     imgAlt: "vite",
   },
   {
     imgPath:
-      "/software-engineer-portfolio/assets/tech-icos/ico-react-native.png",
+      "/assets/tech-icos/ico-react-native.png",
     imgAlt: "react native",
   },
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-motion.png",
+    imgPath: "/assets/tech-icos/ico-motion.png",
     imgAlt: "framer motion",
   },
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-jquery.png",
+    imgPath: "/assets/tech-icos/ico-jquery.png",
     imgAlt: "jquery",
   },
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-redux.png",
+    imgPath: "/assets/tech-icos/ico-redux.png",
     imgAlt: "redux",
   },
   {
     imgPath:
-      "/software-engineer-portfolio/assets/tech-icos/ico-tailwindcss.png",
+      "/assets/tech-icos/ico-tailwindcss.png",
     imgAlt: "tailwind css",
   },
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-astro.png",
+    imgPath: "/assets/tech-icos/ico-astro.png",
     imgAlt: "astro",
   },
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-nextjs.png",
+    imgPath: "/assets/tech-icos/ico-nextjs.png",
     imgAlt: "nextjs",
   },
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-js.png",
+    imgPath: "/assets/tech-icos/ico-js.png",
     imgAlt: "js",
   },
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-ts.png",
+    imgPath: "/assets/tech-icos/ico-ts.png",
     imgAlt: "ts",
   },
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-nodejs.png",
+    imgPath: "/assets/tech-icos/ico-nodejs.png",
     imgAlt: "nodejs",
   },
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-csharp.png",
+    imgPath: "/assets/tech-icos/ico-csharp.png",
     imgAlt: "csharp",
   },
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-java.png",
+    imgPath: "/assets/tech-icos/ico-java.png",
     imgAlt: "java",
   },
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-net.png",
+    imgPath: "/assets/tech-icos/ico-net.png",
     imgAlt: "net",
   },
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-umbraco.png",
+    imgPath: "/assets/tech-icos/ico-umbraco.png",
     imgAlt: "umbraco",
   },
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-mysql.png",
+    imgPath: "/assets/tech-icos/ico-mysql.png",
     imgAlt: "mysql",
   },
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-openapi.png",
+    imgPath: "/assets/tech-icos/ico-openapi.png",
     imgAlt: "open api",
   },
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-aws.png",
+    imgPath: "/assets/tech-icos/ico-aws.png",
     imgAlt: "aws",
   },
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-azure.png",
+    imgPath: "/assets/tech-icos/ico-azure.png",
     imgAlt: "azure",
   },
   {
-    imgPath: "/software-engineer-portfolio/assets/tech-icos/ico-docker.png",
+    imgPath: "/assets/tech-icos/ico-docker.png",
     imgAlt: "docker",
   },
 ];
@@ -104,7 +104,7 @@ export const TechStackSection = () => {
         <div className="tag mx-auto">
           <p className="whitespace-nowrap">Tech Stack</p>
           <img
-            src="/software-engineer-portfolio/assets/tag-icons/tech-stack.png"
+            src="/assets/tag-icons/tech-stack.png"
             alt="icon"
             className=""
           />

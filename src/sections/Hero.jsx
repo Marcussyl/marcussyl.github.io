@@ -13,7 +13,7 @@ export const HeroSection = () => {
     <div className="relative mx-auto mt-4 flex w-full flex-col items-center justify-center gap-7 text-center">
       <div className="tag">
         <p>Hi there</p>
-        <img src="/software-engineer-portfolio/assets/tag-icons/shake-hand.png" />
+        <img src="/assets/tag-icons/shake-hand.png" />
       </div>
       {/* <TextRotate/> */}
       <div className="gradient-text">
@@ -27,7 +27,7 @@ export const HeroSection = () => {
         <span className="animate-blinking-caret inline-block h-3 w-3 border-b-2"></span>
       </p>
       <a
-        href="/software-engineer-portfolio/assets/Web Developer.pdf"
+        href="/assets/Web Developer.pdf"
         download="Marcus_Sze_CV.pdf"
       >
         <motion.button
@@ -66,7 +66,7 @@ export const HeroSection = () => {
           className="border-main-purple flex h-[40px] w-[40px] items-center justify-center rounded-full border-1 p-2"
         >
           <img
-            src="/software-engineer-portfolio/assets/social-media/github.png"
+            src="/assets/social-media/github.png"
             alt="github icon"
           />
         </a>
@@ -76,7 +76,7 @@ export const HeroSection = () => {
           className="border-main-purple flex h-[40px] w-[40px] items-center justify-center rounded-full border-1 p-2"
         >
           <img
-            src="/software-engineer-portfolio/assets/social-media/linkedin.png"
+            src="/assets/social-media/linkedin.png"
             alt="linkedin icon"
           />
         </a>

@@ -105,7 +105,7 @@ function App() {
       {/* HERO Section */}
       <section
         id="about"
-        className="bg-[url('/software-engineer-portfolio/assets/hero-bg.png')] bg-center flex items-center"
+        className="bg-[url('/assets/hero-bg.png')] bg-center flex items-center"
       >
         <div className="section-content py-30">
           <HeroSection />
@@ -123,7 +123,7 @@ function App() {
         id="projects"
         style={{
           background:
-            "url('/software-engineer-portfolio/assets/grid-bg.png') no-repeat, url('/software-engineer-portfolio/assets/light-bg.png') no-repeat",
+            "url('/assets/grid-bg.png') no-repeat, url('/assets/light-bg.png') no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -137,7 +137,7 @@ function App() {
         id="milestone"
         style={{
           background:
-            "url('/software-engineer-portfolio/assets/fancy-bg.svg') no-repeat",
+            "url('/assets/fancy-bg.svg') no-repeat",
           backgroundSize: "cover",
         }}
       >

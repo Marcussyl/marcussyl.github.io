@@ -228,7 +228,7 @@ export const Contacts = () => {
               <div className="inner border-main-purple text-grayish-white flex !cursor-pointer items-center justify-center gap-2 rounded-[10px] border-2 border-dashed p-2">
                 {"Send Message"}
                 {/* <img
-                  src="/software-engineer-portfolio/assets/send.svg"
+                  src="/assets/send.svg"
                   alt="plane icon"
                 /> */}
               </div>
@@ -253,7 +253,7 @@ export const Contacts = () => {
           <div className="social-medias-container">
             <a href="https://github.com/Marcussyl" target="_blank">
               <img
-                src="/software-engineer-portfolio/assets/social-media/github.png"
+                src="/assets/social-media/github.png"
                 alt="github icon"
               />
             </a>
@@ -262,7 +262,7 @@ export const Contacts = () => {
               target="_blank"
             >
               <img
-                src="/software-engineer-portfolio/assets/social-media/linkedin.png"
+                src="/assets/social-media/linkedin.png"
                 alt="linkedin icon"
               />
             </a>

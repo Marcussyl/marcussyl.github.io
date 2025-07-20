@@ -15,7 +15,7 @@ This portfolio website serves as my digital identity, highlighting my technical 
 
 ## 🚀 Live Demo
 
-Visit the live portfolio: [Marcus Sze Portfolio](https://marcussyl.github.io/software-engineer-portfolio/)
+Visit the live portfolio: [Marcus Sze Portfolio](https://marcussyl.github.io)
 
 ## 🛠️ Tech Stack
 
@@ -49,7 +49,7 @@ Visit the live portfolio: [Marcus Sze Portfolio](https://marcussyl.github.io/sof
 ## 📁 Project Structure
 
 ```md
-software-engineer-portfolio/
+marcussyl.github.io/
 ├── public/
 │   └── assets/           # Images, icons, and static assets
 ├── src/
@@ -75,8 +75,8 @@ software-engineer-portfolio/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/Marcussyl/software-engineer-portfolio.git
-   cd software-engineer-portfolio
+   git clone git@github.com:Marcussyl/marcussyl.github.io.git
+   cd marcussyl.github.io.git
    ```
 
 2. **Install dependencies**
@@ -219,6 +219,6 @@ To use a custom domain:
 
 - **GitHub**: [@Marcussyl](https://github.com/Marcussyl)
 - **LinkedIn**: [Marcus Sze](https://www.linkedin.com/in/marcus-sze-3538ba229/)
-- **Portfolio**: [Live Site](https://marcussyl.github.io/software-engineer-portfolio/)
+- **Portfolio**: [Live Site](https://marcussyl.github.io)
 
 ---

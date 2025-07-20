@@ -12,7 +12,7 @@ const projects = [
   {
     projectId: "1",
     thumbImgs: [
-      "/software-engineer-portfolio/assets/proj-thumbs/towngas-lifestyle.png",
+      "/assets/proj-thumbs/towngas-lifestyle.png",
     ],
     title: "Towngas Lifestyle",
     tags: ["Astro", "SSG", "SSR", "React", "Multi-language"],
@@ -27,7 +27,7 @@ const projects = [
   {
     projectId: "2",
     thumbImgs: [
-      "/software-engineer-portfolio/assets/proj-thumbs/horizon-banking.png",
+      "/assets/proj-thumbs/horizon-banking.png",
     ],
     title: "Horizon Banking",
     tags: [
@@ -49,7 +49,7 @@ const projects = [
   {
     projectId: "3",
     thumbImgs: [
-      "/software-engineer-portfolio/assets/proj-thumbs/mark-sixer.png",
+      "/assets/proj-thumbs/mark-sixer.png",
     ],
     title: "Mark Sixer",
     tags: ["React", "Vite", "Puppeteer", "OCR", "Netlify"],
@@ -63,7 +63,7 @@ const projects = [
   },
   {
     projectId: "4",
-    thumbImgs: ["/software-engineer-portfolio/assets/proj-thumbs/jamming.png"],
+    thumbImgs: ["/assets/proj-thumbs/jamming.png"],
     title: "Jammming",
     tags: ["React", "OAuth2", "Spotify API"],
     overview:
@@ -76,7 +76,7 @@ const projects = [
   },
   {
     projectId: "5",
-    thumbImgs: ["/software-engineer-portfolio/assets/proj-thumbs/ai-racer.png"],
+    thumbImgs: ["/assets/proj-thumbs/ai-racer.png"],
     title: "AI Racer",
     tags: ["MkDocs", "SSG", "Light/Dark Mode Support"],
     overview:
@@ -89,7 +89,7 @@ const projects = [
   },
   {
     projectId: "6",
-    thumbImgs: ["/software-engineer-portfolio/assets/proj-thumbs/big-two.png"],
+    thumbImgs: ["/assets/proj-thumbs/big-two.png"],
     title: "Big Two",
     tags: ["Java", "Java Swing", "OOP", "Real-time Game Validation"],
     overview:
@@ -147,7 +147,7 @@ export const Projects = () => {
         <div className="tag">
           <p>Projects</p>
           <img
-            src="/software-engineer-portfolio/assets/tag-icons/tech-stack.png"
+            src="/assets/tag-icons/tech-stack.png"
             alt="icon"
           />
         </div>
@@ -170,7 +170,7 @@ export const Projects = () => {
       </motion.div>
       <div className="round-btn animate-bounce" onClick={handleShowMore}>
         <img
-          src="/software-engineer-portfolio/assets/up-right-arrow.png"
+          src="/assets/up-right-arrow.png"
           alt="arrow icon"
           className="rotate-135"
         />

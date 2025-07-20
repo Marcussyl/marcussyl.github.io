@@ -24,7 +24,7 @@ const ProjectCard = ({
             <h3 className="proj-title text-sharp-purple font-bold">{title}</h3>
           </div>
           <img
-            src="/software-engineer-portfolio/assets/up-right-arrow.png"
+            src="/assets/up-right-arrow.png"
             alt="link icon"
             className="round-btn"
           />

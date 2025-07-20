@@ -25,7 +25,7 @@ export const Milestone = () => {
       <div className="tag">
         <p>Milestones</p>
         <img
-          src="/software-engineer-portfolio/assets/tag-icons/achievement.png"
+          src="/assets/tag-icons/achievement.png"
           alt="milestone"
         />
       </div>
@@ -55,7 +55,7 @@ export const Milestone = () => {
             >
               <SwiperSlide className="flex !w-full justify-center">
                 <img
-                  src="/software-engineer-portfolio/assets/milestone-thumbs/aws-practitioner/aws-practitioner.png"
+                  src="/assets/milestone-thumbs/aws-practitioner/aws-practitioner.png"
                   alt="aws practitioner"
                   className="mx-auto object-contain pb-8"
                   data-achievement="aws-practitioner"
@@ -84,7 +84,7 @@ export const Milestone = () => {
             >
               <SwiperSlide className="flex !w-full justify-center">
                 <img
-                  src="/software-engineer-portfolio/assets/milestone-thumbs/hackathon/hackathon.png"
+                  src="/assets/milestone-thumbs/hackathon/hackathon.png"
                   alt="aws practitioner"
                   className="mx-auto object-contain pb-8"
                   data-achievement="aws-practitioner"
@@ -114,7 +114,7 @@ export const Milestone = () => {
             >
               <SwiperSlide className="flex !w-full justify-center">
                 <img
-                  src="/software-engineer-portfolio/assets/milestone-thumbs/mastercode/mastercode.png"
+                  src="/assets/milestone-thumbs/mastercode/mastercode.png"
                   alt="aws practitioner"
                   className="mx-auto object-contain pb-8"
                   data-achievement="aws-practitioner"
@@ -133,7 +133,7 @@ export const Milestone = () => {
             >
               <h2>AWS Pactitioner Certificate</h2>
               <img
-                src="/software-engineer-portfolio/assets/google-down-arrow.svg"
+                src="/assets/google-down-arrow.svg"
                 alt="up-right-arrow"
                 className=""
               />
@@ -159,7 +159,7 @@ export const Milestone = () => {
             >
               <h2>IEEE Web3 Hackathon Competition 2022 (First-Runner Up)</h2>
               <img
-                src="/software-engineer-portfolio/assets/google-down-arrow.svg"
+                src="/assets/google-down-arrow.svg"
                 alt="up-right-arrow"
                 className=""
               />
@@ -195,7 +195,7 @@ export const Milestone = () => {
             >
               <h2>MasterCode Java Contest 2024</h2>
               <img
-                src="/software-engineer-portfolio/assets/google-down-arrow.svg"
+                src="/assets/google-down-arrow.svg"
                 alt="up-right-arrow"
                 className=""
               />

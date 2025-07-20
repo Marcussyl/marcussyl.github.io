@@ -26,12 +26,12 @@ const ProjectDetailCard = ({
           onClick={() => setOpenProjectId(null)}
         >
           <img
-            src="/software-engineer-portfolio/assets/icon-close.svg"
+            src="/assets/icon-close.svg"
             alt="close icon"
             className="h-6 w-6 group-hover:hidden"
           />
           <img
-            src="/software-engineer-portfolio/assets/icon-close-purple.svg"
+            src="/assets/icon-close-purple.svg"
             alt="close icon"
             className="hidden h-6 w-6 group-hover:block"
           />
@@ -67,7 +67,7 @@ const ProjectDetailCard = ({
                     {features.map((feature, index) => (
                       <div className="feature-item flex gap-2" key={index}>
                         <img
-                          src="/software-engineer-portfolio/assets/tick.png"
+                          src="/assets/tick.png"
                           alt="icon"
                         />
                         <p className="proj-desc">{feature}</p>
@@ -81,7 +81,7 @@ const ProjectDetailCard = ({
                     {challenges.map((challenge, index) => (
                       <div className="feature-item flex gap-2" key={index}>
                         <img
-                          src="/software-engineer-portfolio/assets/tick.png"
+                          src="/assets/tick.png"
                           alt="icon"
                         />
                         <p className="proj-desc">{challenge}</p>
@@ -103,7 +103,7 @@ const ProjectDetailCard = ({
                   <div className="inner w-full justify-center gap-3 py-2 text-sm md:text-base">
                     GitHub
                     <img
-                      src="/software-engineer-portfolio/assets/github.png"
+                      src="/assets/github.png"
                       alt="icon"
                       className="w-[15px] object-contain"
                     />
@@ -120,7 +120,7 @@ const ProjectDetailCard = ({
                 >
                   <p>Live</p>
                   <img
-                    src="/software-engineer-portfolio/assets/play.png"
+                    src="/assets/play.png"
                     alt="icon"
                     className="w-[15px] object-contain"
                   />

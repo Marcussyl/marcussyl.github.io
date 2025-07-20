@@ -19,7 +19,7 @@ export const NavBar = () => {
             onClick={(e) => handleHeaderLinkClick(e, "#about")}
           >
             <img
-              src="/software-engineer-portfolio/assets/globe.svg"
+              src="/assets/globe.svg"
               alt="globe icon"
             />
             <p className="text-sharp-purple font-pacifico text-xl font-black">
@@ -79,12 +79,12 @@ export const NavBar = () => {
           >
             <div className="group py-4">
               <img
-                src="/software-engineer-portfolio/assets/hamburger.svg"
+                src="/assets/hamburger.svg"
                 alt="hamburger icon"
                 className="w-[30px] object-contain group-hover:hidden"
               />
               <img
-                src="/software-engineer-portfolio/assets/hamburger-purple.svg"
+                src="/assets/hamburger-purple.svg"
                 alt="hamburger icon"
                 className="hidden w-[30px] object-contain group-hover:block"
               />
@@ -105,7 +105,7 @@ export const NavBar = () => {
             <div className="flex items-center justify-between gap-2 rounded-lg border-2 border-[#2c1854] bg-[#160c2a]/70 px-4 py-4">
               <div className="flex gap-2">
                 <img
-                  src="/software-engineer-portfolio/assets/globe.svg"
+                  src="/assets/globe.svg"
                   alt=""
                 />
                 <p className="text-sharp-purple font-pacifico text-xl font-black">
@@ -117,12 +117,12 @@ export const NavBar = () => {
                 onClick={() => setMobileNavOpen(false)}
               >
                 <img
-                  src="/software-engineer-portfolio/assets/icon-close.svg"
+                  src="/assets/icon-close.svg"
                   alt="close icon"
                   className="h-6 w-6 group-hover:hidden"
                 />
                 <img
-                  src="/software-engineer-portfolio/assets/icon-close-purple.svg"
+                  src="/assets/icon-close-purple.svg"
                   alt="close icon"
                   className="hidden h-6 w-6 group-hover:block"
                 />
@@ -173,7 +173,7 @@ export const NavBar = () => {
                   className="border-main-purple flex h-[40px] w-[40px] items-center justify-center rounded-full border-1 p-2"
                 >
                   <img
-                    src="/software-engineer-portfolio/assets/social-media/github.png"
+                    src="/assets/social-media/github.png"
                     alt="github icon"
                   />
                 </a>
@@ -183,7 +183,7 @@ export const NavBar = () => {
                   className="border-main-purple flex h-[40px] w-[40px] items-center justify-center rounded-full border-1 p-2"
                 >
                   <img
-                    src="/software-engineer-portfolio/assets/social-media/linkedin.png"
+                    src="/assets/social-media/linkedin.png"
                     alt="linkedin icon"
                   />
                 </a>
