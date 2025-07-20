@@ -251,11 +251,15 @@ export const Contacts = () => {
             )}
           </form>
           <div className="social-medias-container">
+            <a
+              href="mailto:szeyulam.jobs@gmail.com"
+              target="_blank"
+              className="border-main-purple flex h-[40px] w-[40px] items-center justify-center rounded-full border-1 p-2"
+            >
+              <img src="/assets/social-media/email.png" alt="email icon" />
+            </a>
             <a href="https://github.com/Marcussyl" target="_blank">
-              <img
-                src="/assets/social-media/github.png"
-                alt="github icon"
-              />
+              <img src="/assets/social-media/github.png" alt="github icon" />
             </a>
             <a
               href="https://www.linkedin.com/in/marcus-sze-3538ba229/"

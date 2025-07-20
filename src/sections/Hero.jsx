@@ -61,6 +61,16 @@ export const HeroSection = () => {
       </a>
       <div className="mt-4 flex items-center justify-center gap-4">
         <a
+          href="mailto:szeyulam.jobs@gmail.com"
+          target="_blank"
+          className="border-main-purple flex h-[40px] w-[40px] items-center justify-center rounded-full border-1 p-2"
+        >
+          <img
+            src="/assets/social-media/email.png"
+            alt="email icon"
+          />
+        </a>
+        <a
           href="https://github.com/Marcussyl"
           target="_blank"
           className="border-main-purple flex h-[40px] w-[40px] items-center justify-center rounded-full border-1 p-2"
