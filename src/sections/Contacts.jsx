@@ -74,13 +74,15 @@ export const Contacts = () => {
             Get in touch
           </h2>
           <br />
-          <form onSubmit={sendEmail} ref={form}>
+          <form onSubmit={sendEmail} ref={form} autoComplete="on">
             <label htmlFor="name">Name</label>
             <div className="input-wrapper">
               <input
+                id="name"
                 name="name"
                 type="text"
                 placeholder="Chan Tai Man"
+                autoComplete="name"
                 className="focus:outline-none"
                 value={state.name}
                 onChange={(e) =>
@@ -96,9 +98,11 @@ export const Contacts = () => {
             <label htmlFor="subject">Subject</label>
             <div className="input-wrapper">
               <input
+                id="subject"
                 name="subject"
                 type="text"
                 placeholder="Enter your subject here"
+                autoComplete="off"
                 className="focus:outline-none"
                 value={state.subject}
                 onChange={(e) =>
@@ -114,9 +118,11 @@ export const Contacts = () => {
             <label htmlFor="email">Email</label>
             <div className="input-wrapper">
               <input
+                id="email"
                 name="email"
                 type="email"
                 placeholder="1234@example.com"
+                autoComplete="email"
                 className="focus:outline-none"
                 value={state.email}
                 onChange={(e) =>
@@ -132,10 +138,12 @@ export const Contacts = () => {
             <label htmlFor="msg">Message</label>
             <div className="input-wrapper">
               <textarea
+                id="msg"
                 name="message"
                 rows="4"
                 cols="50"
                 placeholder="Write your message here"
+                autoComplete="off"
                 className="focus:outline-none"
                 value={state.message}
                 onChange={(e) =>

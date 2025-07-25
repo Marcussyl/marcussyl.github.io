@@ -175,18 +175,33 @@ export const Projects = () => {
           ))}
         </div>
       </motion.div>
-      <motion.button
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-        className={`glowing-btn block ${visibleCount >= projects.length ? 'hidden' : ''}`}
-        onClick={handleShowMore}
-      >
-        <div className="inner px-5">Show More</div>
-      </motion.button>
+      {visibleCount < projects.length ? (
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className={`glowing-btn block`}
+          onClick={handleShowMore}
+        >
+          <div className="inner px-5">Show More</div>
+        </motion.button>
+      ) : (
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className={`glowing-btn block`}
+          onClick={() => setVisibleCount(3)}
+        >
+          <div className="inner px-5">Collapse</div>
+        </motion.button>
+      )}
 
       {/* Project Detail Card */}
       {openProjectId && (
