@@ -18,16 +18,13 @@ export const NavBar = () => {
             className="flex cursor-pointer items-center gap-2"
             onClick={(e) => handleHeaderLinkClick(e, "#about")}
           >
-            <img
-              src="/assets/globe.svg"
-              alt="globe icon"
-            />
+            <img src="/assets/globe.svg" alt="globe icon" />
             <p className="text-sharp-purple font-pacifico text-xl font-black">
               Mars
             </p>
           </div>
           {/* Right side - Navigation Links */}
-          <div className="hidden items-center gap-5 navbar:flex">
+          <div className="navbar:flex hidden items-center gap-5">
             <div
               className={`text-grayish-white hover:text-light-purple cursor-pointer py-4 text-lg font-medium transition-colors focus:outline-none ${
                 activeHeaderLink === "#about" ? "text-sharp-purple" : ""
@@ -74,7 +71,7 @@ export const NavBar = () => {
             </div>
           </div>
           <div
-            className="block cursor-pointer navbar:hidden"
+            className="navbar:hidden block cursor-pointer"
             onClick={() => setMobileNavOpen(true)}
           >
             <div className="group py-4">
@@ -104,10 +101,7 @@ export const NavBar = () => {
           >
             <div className="flex items-center justify-between gap-2 rounded-lg border-2 border-[#2c1854] bg-[#160c2a]/70 px-4 py-4">
               <div className="flex gap-2">
-                <img
-                  src="/assets/globe.svg"
-                  alt=""
-                />
+                <img src="/assets/globe.svg" alt="" />
                 <p className="text-sharp-purple font-pacifico text-xl font-black">
                   Mars
                 </p>
@@ -167,6 +161,13 @@ export const NavBar = () => {
               </a>
               <div className="h-[1px] w-full bg-[#2c1854]"></div>
               <div className="flex items-center justify-center gap-4 py-4">
+                <a
+                  href="mailto:szeyulam.jobs@gmail.com"
+                  target="_blank"
+                  className="border-main-purple flex h-[40px] w-[40px] items-center justify-center rounded-full border-1 p-2"
+                >
+                  <img src="/assets/social-media/email.png" alt="email icon" />
+                </a>
                 <a
                   href="https://github.com/Marcussyl"
                   target="_blank"
