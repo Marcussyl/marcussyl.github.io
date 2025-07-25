@@ -156,10 +156,7 @@ export const Projects = () => {
       >
         <div className="tag">
           <p>Projects</p>
-          <img
-            src="/assets/tag-icons/tech-stack.png"
-            alt="icon"
-          />
+          <img src="/assets/tag-icons/tech-stack.png" alt="icon" />
         </div>
         <h1 className="gradient-text section-title">
           Latest Projects I Have Done
@@ -178,13 +175,18 @@ export const Projects = () => {
           ))}
         </div>
       </motion.div>
-      <div className="round-btn animate-bounce" onClick={handleShowMore}>
-        <img
-          src="/assets/up-right-arrow.png"
-          alt="arrow icon"
-          className="rotate-135"
-        />
-      </div>
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className={`glowing-btn block ${visibleCount >= projects.length ? 'hidden' : ''}`}
+        onClick={handleShowMore}
+      >
+        <div className="inner px-5">Show More</div>
+      </motion.button>
 
       {/* Project Detail Card */}
       {openProjectId && (
