@@ -34,7 +34,6 @@ export const Milestone = () => {
 
   const handleAccordionClick = (e) => {
     const achievement = e.currentTarget.getAttribute("data-achievement");
-    console.log(achievement);
     setOpenAchievement(achievement);
   };
 
