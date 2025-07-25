@@ -11,14 +11,14 @@ import {
 const projects = [
   {
     projectId: "1",
-    thumbImgs: ["/assets/proj-thumbs/towngas-lifestyle.webp"],
-    title: "Towngas Lifestyle",
+    thumbImgs: ["/assets/proj-thumbs/utensil.webp"],
+    title: "Company Website Revamp",
     tags: ["Astro", "SSG", "SSR", "React", "Multi-language"],
     overview:
-      "A redesigned landing page project aimed at refreshing the digital identity of Towngas Lifestyle. This clean, responsive interface highlights the brand’s expanded offerings—from smart kitchens and home services to premium retail experiences.",
+      "A redesigned landing page project aimed at refreshing the digital identity of the company and highlights the brand’s expanded offerings—from smart kitchens and home services to premium retail experiences.",
     features: null,
     challenges: null,
-    githubLink: "https://github.com/Marcussyl/towngas-lifestyle-website",
+    githubLink: null,
     liveSiteLink: null,
     videoLink: "",
   },
