@@ -4,11 +4,11 @@ import { motion } from "motion/react";
 const techStackItems = [
   // frontend
   {
-    imgPath: "/assets/tech-icos/ico-react.png",
+    imgPath: "/assets/tech-icos/ico-react.webp",
     imgAlt: "react",
   },
   {
-    imgPath: "/assets/tech-icos/ico-vite.png",
+    imgPath: "/assets/tech-icos/ico-vite.webp",
     imgAlt: "vite",
   },
   {
@@ -20,55 +20,55 @@ const techStackItems = [
     imgAlt: "framer motion",
   },
   {
-    imgPath: "/assets/tech-icos/ico-jquery.png",
+    imgPath: "/assets/tech-icos/ico-jquery.webp",
     imgAlt: "jquery",
   },
   {
-    imgPath: "/assets/tech-icos/ico-tailwindcss.png",
+    imgPath: "/assets/tech-icos/ico-tailwindcss.webp",
     imgAlt: "tailwind css",
   },
   {
-    imgPath: "/assets/tech-icos/ico-astro.png",
+    imgPath: "/assets/tech-icos/ico-astro.webp",
     imgAlt: "astro",
   },
   {
-    imgPath: "/assets/tech-icos/ico-nextjs.png",
+    imgPath: "/assets/tech-icos/ico-nextjs.webp",
     imgAlt: "nextjs",
   },
   {
-    imgPath: "/assets/tech-icos/ico-js.png",
+    imgPath: "/assets/tech-icos/ico-js.webp",
     imgAlt: "js",
   },
   {
-    imgPath: "/assets/tech-icos/ico-ts.png",
+    imgPath: "/assets/tech-icos/ico-ts.webp",
     imgAlt: "ts",
   },
   {
-    imgPath: "/assets/tech-icos/ico-nodejs.png",
+    imgPath: "/assets/tech-icos/ico-nodejs.webp",
     imgAlt: "nodejs",
   },
   {
-    imgPath: "/assets/tech-icos/ico-csharp.png",
+    imgPath: "/assets/tech-icos/ico-csharp.webp",
     imgAlt: "csharp",
   },
   {
-    imgPath: "/assets/tech-icos/ico-java.png",
+    imgPath: "/assets/tech-icos/ico-java.webp",
     imgAlt: "java",
   },
   {
-    imgPath: "/assets/tech-icos/ico-net.png",
+    imgPath: "/assets/tech-icos/ico-net.webp",
     imgAlt: "net",
   },
   {
-    imgPath: "/assets/tech-icos/ico-postman.png",
+    imgPath: "/assets/tech-icos/ico-postman.webp",
     imgAlt: "postman",
   },
   {
-    imgPath: "/assets/tech-icos/ico-umbraco.png",
+    imgPath: "/assets/tech-icos/ico-umbraco.webp",
     imgAlt: "umbraco",
   },
   {
-    imgPath: "/assets/tech-icos/ico-mysql.png",
+    imgPath: "/assets/tech-icos/ico-mysql.webp",
     imgAlt: "mysql",
   },
   {
@@ -76,15 +76,15 @@ const techStackItems = [
     imgAlt: "open api",
   },
   {
-    imgPath: "/assets/tech-icos/ico-aws.png",
+    imgPath: "/assets/tech-icos/ico-aws.webp",
     imgAlt: "aws",
   },
   {
-    imgPath: "/assets/tech-icos/ico-azure.png",
+    imgPath: "/assets/tech-icos/ico-azure.webp",
     imgAlt: "azure",
   },
   {
-    imgPath: "/assets/tech-icos/ico-docker.png",
+    imgPath: "/assets/tech-icos/ico-docker.webp",
     imgAlt: "docker",
   },
 ];

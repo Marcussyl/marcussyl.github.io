@@ -55,7 +55,7 @@ export const Milestone = () => {
             >
               <SwiperSlide className="flex !w-full justify-center">
                 <img
-                  src="/assets/milestone-thumbs/aws-practitioner/aws-practitioner.png"
+                  src="/assets/milestone-thumbs/aws-practitioner/aws-practitioner.webp"
                   alt="aws practitioner"
                   className="mx-auto object-contain pb-8"
                   data-achievement="aws-practitioner"
@@ -84,7 +84,7 @@ export const Milestone = () => {
             >
               <SwiperSlide className="flex !w-full justify-center">
                 <img
-                  src="/assets/milestone-thumbs/hackathon/hackathon.png"
+                  src="/assets/milestone-thumbs/hackathon/hackathon.webp"
                   alt="aws practitioner"
                   className="mx-auto object-contain pb-8"
                   data-achievement="aws-practitioner"
@@ -114,7 +114,7 @@ export const Milestone = () => {
             >
               <SwiperSlide className="flex !w-full justify-center">
                 <img
-                  src="/assets/milestone-thumbs/mastercode/mastercode.png"
+                  src="/assets/milestone-thumbs/mastercode/mastercode.webp"
                   alt="aws practitioner"
                   className="mx-auto object-contain pb-8"
                   data-achievement="aws-practitioner"

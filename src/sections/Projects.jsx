@@ -11,7 +11,7 @@ import {
 const projects = [
   {
     projectId: "1",
-    thumbImgs: ["/assets/proj-thumbs/towngas-lifestyle.png"],
+    thumbImgs: ["/assets/proj-thumbs/towngas-lifestyle.webp"],
     title: "Towngas Lifestyle",
     tags: ["Astro", "SSG", "SSR", "React", "Multi-language"],
     overview:
@@ -24,7 +24,7 @@ const projects = [
   },
   {
     projectId: "2",
-    thumbImgs: ["/assets/proj-thumbs/horizon-banking.png"],
+    thumbImgs: ["/assets/proj-thumbs/horizon-banking.webp"],
     title: "Horizon Banking",
     tags: [
       "Next.js",
@@ -48,7 +48,7 @@ const projects = [
   },
   {
     projectId: "3",
-    thumbImgs: ["/assets/proj-thumbs/mark-sixer.png"],
+    thumbImgs: ["/assets/proj-thumbs/mark-sixer.webp"],
     title: "Mark Sixer",
     tags: ["React", "Vite", "Puppeteer", "OCR", "Netlify"],
     overview:
@@ -65,7 +65,7 @@ const projects = [
   },
   {
     projectId: "4",
-    thumbImgs: ["/assets/proj-thumbs/jamming.png"],
+    thumbImgs: ["/assets/proj-thumbs/jamming.webp"],
     title: "Jammming",
     tags: ["React", "OAuth2", "Spotify API"],
     overview:
@@ -82,7 +82,7 @@ const projects = [
   },
   {
     projectId: "5",
-    thumbImgs: ["/assets/proj-thumbs/ai-racer.png"],
+    thumbImgs: ["/assets/proj-thumbs/ai-racer.webp"],
     title: "AI Racer",
     tags: ["MkDocs", "SSG", "Light/Dark Mode Support"],
     overview:
@@ -95,7 +95,7 @@ const projects = [
   },
   {
     projectId: "6",
-    thumbImgs: ["/assets/proj-thumbs/big-two.png"],
+    thumbImgs: ["/assets/proj-thumbs/big-two.webp"],
     title: "Big Two",
     tags: ["Java", "Java Swing", "OOP", "Real-time Game Validation"],
     overview:
