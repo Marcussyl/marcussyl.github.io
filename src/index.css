@@ -60,7 +60,7 @@
     }
 
     .glowing-btn {
-      @apply bg-gradient-to-b from-[#3d2769] via-[#7d64b1] to-[#854ef2] px-0.5 drop-shadow-2xl relative
+      @apply bg-gradient-to-b from-[#3d2769] via-[#7d64b1] to-[#854ef2] px-0.5 drop-shadow-2xl relative cursor-pointer
     }
 
     .glowing-btn .inner {
@@ -140,27 +140,6 @@
       @apply w-full object-contain rounded
     }
 
-    /* #projects .proj-tag {
-      @apply text-sm border-1 border-grayish-white py-1 px-[13px] rounded-[18px] whitespace-nowrap text-grayish-white
-    } */
-
-    /* #projects .proj-title {
-      @apply text-lg text-grayish-white
-    } */
-
-
-    /* #projects .proj-detail-card .proj-title {
-      @apply text-2xl font-bold text-sharp-purple
-    } */
-
-    /* #projects .proj-detail-card .proj-subtitle {
-      @apply text-lg font-bold text-grayish-white
-    } */
-
-    /* #projects .proj-detail-card .proj-desc {
-      @apply text-base text-grayish-white
-    } */
-
     #projects .feature-item {
       @apply flex gap-2
     }
@@ -169,66 +148,7 @@
       @apply object-contain w-[16px]
     }
 
-    /* Projects Showcase Section start */
-
-
-    /* Mileston Section start */
-    #milestone .accordion {
-      @apply flex flex-col md:flex-row gap-3 md:gap-7 justify-center w-[100%]
-    }
-    #milestone .accordion .thumbnails {
-      @apply flex-1
-    }
-    /* #milestone .accordion .thumbnails .swiper {
-      @apply w-[50%]
-    } */
-    #milestone .accordion .details {
-      @apply flex-1
-    }
-    #milestone .accordion .details .accordion-title {
-      @apply flex gap-2 items-center justify-between text-lg py-3 relative font-bold
-    }
-    #milestone .accordion .details .accordion-item .accordion-title {
-      @apply border-b-[1px] border-main-purple cursor-pointer
-    }
-    /* control accordion thumbnail */
-    /* #milestone .accordion .thumbnails img {
-      @apply hidden object-contain w-full rounded py-3
-    } */
-    #milestone .accordion[data-active-accordion="aws-practitioner"] .thumbnails img[data-achievement="aws-practitioner"],
-    #milestone .accordion[data-active-accordion="hackathon"] .thumbnails img[data-achievement="hackathon"],
-    #milestone .accordion[data-active-accordion="java-competition"] .thumbnails img[data-achievement="java-competition"]
-    {
-      @apply block
-    }
-
-    /* control accordion content */
-    #milestone .accordion .details .accordion-content {
-      @apply hidden py-3 text-grayish-white text-base
-    }
-    #milestone .accordion .details .accordion-content[data-achievement="aws-practitioner"] {
-      @apply block
-    }
-    /* #milestone .accordion[data-active-accordion="aws-practitioner"] .details .accordion-content[data-achievement="aws-practitioner"],
-    #milestone .accordion[data-active-accordion="hackathon"] .details .accordion-content[data-achievement="hackathon"],
-    #milestone .accordion[data-active-accordion="java-competition"] .details .accordion-content[data-achievement="java-competition"]
-    {
-      @apply h-70 py-0
-    } */
-
-    /* control accordion title arrow icon */
-    #milestone .accordion[data-active-accordion="aws-practitioner"] .details .accordion-title[data-achievement="aws-practitioner"] img,
-    #milestone .accordion[data-active-accordion="hackathon"] .details .accordion-title[data-achievement="hackathon"] img,
-    #milestone .accordion[data-active-accordion="java-competition"] .details .accordion-title[data-achievement="java-competition"] img
-    {
-      @apply transform rotate-180 transition-transform duration-200 ease-linear
-    }
-
-    .active-bullet {
-      @apply bg-sky-400
-    }
-
-    /* Mileston Section end */
+    /* Projects Showcase Section end */
 
     /* Contacts Section start */
     #contact .input-wrapper {
