@@ -112,7 +112,7 @@ const projects = [
   },
   {
     projectId: "7",
-    thumbImgs: ["/assets/proj-thumbs/pet-addoption.png"],
+    thumbImgs: ["/assets/proj-thumbs/pet-addoption.webp"],
     title: "Pet Addoption Client",
     tags: ["React", "React Route", "Yarn"],
     overview: "A pet adoption web client.",
@@ -129,7 +129,7 @@ const projects = [
   },
   {
     projectId: "8",
-    thumbImgs: ["/assets/proj-thumbs/reddit-client.png"],
+    thumbImgs: ["/assets/proj-thumbs/reddit-client.webp"],
     title: "Reddit Client",
     tags: ["React", "React Route"],
     overview:
@@ -142,7 +142,7 @@ const projects = [
   },
   {
     projectId: "9",
-    thumbImgs: ["/assets/proj-thumbs/flying-chess.png"],
+    thumbImgs: ["/assets/proj-thumbs/flying-chess.webp"],
     title: "Flying Chess",
     tags: ["C++", "Text-based", "Console Game"],
     overview:
@@ -159,7 +159,7 @@ const projects = [
   },
   {
     projectId: "10",
-    thumbImgs: ["/assets/proj-thumbs/wordpress-portfolio.png"],
+    thumbImgs: ["/assets/proj-thumbs/wordpress-portfolio.webp"],
     title: "Wordpress Portfolio",
     tags: ["Wordpress", "SEO", "CMS", "PHP"],
     overview:
@@ -176,7 +176,7 @@ const projects = [
   },
   {
     projectId: "11",
-    thumbImgs: ["/assets/proj-thumbs/icy-reward.png"],
+    thumbImgs: ["/assets/proj-thumbs/icy-reward.webp"],
     title: "Icy Reward",
     tags: ["Figma", "UI/UX", "Loyalty Program", "Prototype"],
     overview:
