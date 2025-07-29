@@ -248,7 +248,8 @@ export const Projects = () => {
           Explore my latest projects, showcasing creativity and precision in
           design. Each project reflects innovation and user-focused solutions.
         </p> */}
-        <div className="flex flex-col flex-wrap items-center justify-center gap-5 py-4 md:flex-row">
+        {/* <div className="flex flex-col flex-wrap items-center justify-center gap-5 py-4 md:flex-row"> */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-5 py-4 max-w-[1220px]">
           {projects.slice(0, visibleCount).map((project) => (
             <ProjectCard
               key={project.projectId + project.title}

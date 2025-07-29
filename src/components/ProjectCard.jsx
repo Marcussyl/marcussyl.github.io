@@ -7,7 +7,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className="border-main-purple relative w-full cursor-pointer self-stretch rounded-md border-2 border-dashed bg-[rgba(133,78,243,10%)] p-4 text-white transition-all duration-200 ease-out md:w-[45%] lg:w-[25%]"
+      className="border-main-purple relative w-full cursor-pointer self-stretch rounded-md border-2 border-dashed bg-[rgba(133,78,243,10%)] p-4 text-white transition-all duration-200 ease-out"
       data-project-id={projectId}
       onClick={handleCardClick}
     >
