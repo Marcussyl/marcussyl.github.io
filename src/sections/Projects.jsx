@@ -110,6 +110,89 @@ const projects = [
     liveSiteLink: null,
     videoLink: "",
   },
+  {
+    projectId: "7",
+    thumbImgs: ["/assets/proj-thumbs/pet-addoption.png"],
+    title: "Pet Addoption Client",
+    tags: ["React", "React Route", "Yarn"],
+    overview: "A pet adoption web client.",
+    features: [
+      "Browse available pets",
+      "View detailed profiles",
+      "Favourite / Wishlist",
+      "Fuzzy search",
+    ],
+    challenges: null,
+    githubLink: "https://github.com/Marcussyl/adopt-a-pet",
+    liveSiteLink: null,
+    videoLink: "",
+  },
+  {
+    projectId: "8",
+    thumbImgs: ["/assets/proj-thumbs/reddit-client.png"],
+    title: "Reddit Client",
+    tags: ["React", "React Route"],
+    overview:
+      "A React-based web application that mimics the core functionality and user experience of Reddit.",
+    features: ["Browse posts", "View comments", "Explore different subreddits"],
+    challenges: null,
+    githubLink: null, //https://reddit-client.netlify.app/
+    liveSiteLink: null,
+    videoLink: "",
+  },
+  {
+    projectId: "9",
+    thumbImgs: ["/assets/proj-thumbs/flying-chess.png"],
+    title: "Flying Chess",
+    tags: ["C++", "Text-based", "Console Game"],
+    overview:
+      "A text-based simulation of the classic board game, built in C++. It captures the core gameplay mechanics through console interactions, offering a simple yet engaging experience.",
+    features: [
+      "Multiplayer mode",
+      "Score tracking and game history",
+      "Dice roll simulation",
+    ],
+    challenges: null,
+    githubLink: "https://github.com/Marcussyl/Flying-Chess",
+    liveSiteLink: null,
+    videoLink: "",
+  },
+  {
+    projectId: "10",
+    thumbImgs: ["/assets/proj-thumbs/wordpress-portfolio.png"],
+    title: "Wordpress Portfolio",
+    tags: ["Wordpress", "SEO", "CMS", "PHP"],
+    overview:
+      "A sleek and responsive portfolio website for a photographer, built with WordPress. It showcases high-quality visuals, organized galleries to highlight creative work and attract potential clients.",
+    features: [
+      "Lightbox Viewer",
+      "Image Galleries",
+      "Social media integration",
+    ],
+    challenges: null,
+    githubLink: null,
+    liveSiteLink: null,
+    videoLink: "https://youtu.be/WN45NaZQo9w",
+  },
+  {
+    projectId: "11",
+    thumbImgs: ["/assets/proj-thumbs/icy-reward.png"],
+    title: "Icy Reward",
+    tags: ["Figma", "UI/UX", "Loyalty Program", "Prototype"],
+    overview:
+      "A Figma mockup for a theme park reward app designed to enhance visitor engagement and loyalty.",
+    features: [
+      "Point Collection",
+      "Reward Redemption",
+      "Tiered Membership",
+      "Map",
+    ],
+    challenges: null,
+    githubLink: null,
+    liveSiteLink: null,
+    videoLink:
+      "https://www.figma.com/design/JLeKlSEZ2a9mh8yAkK7swt/IcyReward--Sprint-3-?node-id=0-1&p=f",
+  },
 ];
 
 export const Projects = () => {
@@ -174,6 +257,8 @@ export const Projects = () => {
             />
           ))}
         </div>
+        {/* <div className="flex items-center justify-center py-4">
+        </div> */}
       </motion.div>
       {visibleCount < projects.length ? (
         <motion.button
@@ -221,6 +306,7 @@ export const Projects = () => {
               challenges={project.challenges}
               githubLink={project.githubLink}
               liveLink={project.liveSiteLink}
+              videoLink={project.videoLink}
               tags={project.tags}
               thumbImgs={project.thumbImgs}
               modalRef={modalRef}

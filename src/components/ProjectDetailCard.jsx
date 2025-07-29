@@ -8,6 +8,7 @@ const ProjectDetailCard = ({
   challenges,
   githubLink,
   liveLink,
+  videoLink,
   tags,
   thumbImgs,
   modalRef
@@ -123,6 +124,22 @@ const ProjectDetailCard = ({
                     src="/assets/play.png"
                     alt="icon"
                     className="w-[15px] object-contain"
+                  />
+                </motion.a>
+              )}
+              {videoLink && (
+                <motion.a
+                  href={videoLink}
+                  target="_blank"
+                  className="border-grayish-white flex flex-1 cursor-pointer items-center justify-center gap-3 border-2 px-2 py-2 text-sm md:text-base"
+                  whileTap={{ scale: 0.92 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                >
+                  <p>Demo</p>
+                  <img
+                    src="/assets/play.png"
+                    alt="icon"
+                    className="w-[12px] object-contain"
                   />
                 </motion.a>
               )}
