@@ -137,7 +137,7 @@
     }
 
     #projects .proj-thumb {
-      @apply w-full object-contain rounded
+      @apply w-full object-contain rounded max-h-[500px]
     }
 
     #projects .feature-item {

@@ -65,6 +65,23 @@ const projects = [
   },
   {
     projectId: "4",
+    thumbImgs: ["/assets/proj-thumbs/rn_movie_app_home.webp"],
+    title: "RN Movie App",
+    tags: ["React Native", "TMDB API", "Expo", "Appwrite"],
+    overview:
+      "A mobile application built with React Native that allows users to browse and search for movies using the TMDB API.",
+    features: [
+      "Search for movies by title",
+      "View movie details and ratings",
+      "Save favorite movies",
+    ],
+    challenges: null,
+    githubLink: "https://github.com/Marcussyl/MovieFlix",
+    liveSiteLink: null,
+    videoLink: "",
+  },
+  {
+    projectId: "5",
     thumbImgs: ["/assets/proj-thumbs/jamming.webp"],
     title: "Jammming",
     tags: ["React", "OAuth2", "Spotify API"],
@@ -81,7 +98,7 @@ const projects = [
     videoLink: "",
   },
   {
-    projectId: "5",
+    projectId: "6",
     thumbImgs: ["/assets/proj-thumbs/wordpress-portfolio.webp"],
     title: "Wordpress Portfolio",
     tags: ["Wordpress", "SEO", "CMS", "PHP"],
@@ -98,7 +115,7 @@ const projects = [
     videoLink: "https://youtu.be/WN45NaZQo9w",
   },
   {
-    projectId: "6",
+    projectId: "7",
     thumbImgs: ["/assets/proj-thumbs/icy-reward.webp"],
     title: "Icy Reward",
     tags: ["Figma", "UI/UX", "Loyalty Program", "Prototype"],
@@ -117,7 +134,7 @@ const projects = [
       "https://www.figma.com/design/JLeKlSEZ2a9mh8yAkK7swt/IcyReward--Sprint-3-?node-id=0-1&p=f",
   },
   {
-    projectId: "7",
+    projectId: "8",
     thumbImgs: ["/assets/proj-thumbs/ai-racer.webp"],
     title: "AI Racer",
     tags: ["MkDocs", "SSG", "Light/Dark Mode Support"],
@@ -130,7 +147,7 @@ const projects = [
     videoLink: "",
   },
   {
-    projectId: "8",
+    projectId: "9",
     thumbImgs: ["/assets/proj-thumbs/big-two.webp"],
     title: "Big Two",
     tags: ["Java", "Java Swing", "OOP", "Real-time Game Validation"],
@@ -147,7 +164,7 @@ const projects = [
     videoLink: "",
   },
   {
-    projectId: "9",
+    projectId: "10",
     thumbImgs: ["/assets/proj-thumbs/pet-addoption.webp"],
     title: "Pet Addoption Client",
     tags: ["React", "React Route", "Yarn"],
@@ -164,7 +181,7 @@ const projects = [
     videoLink: "",
   },
   {
-    projectId: "10",
+    projectId: "11",
     thumbImgs: ["/assets/proj-thumbs/reddit-client.webp"],
     title: "Reddit Client",
     tags: ["React", "React Route"],
@@ -177,7 +194,7 @@ const projects = [
     videoLink: "",
   },
   {
-    projectId: "11",
+    projectId: "12",
     thumbImgs: ["/assets/proj-thumbs/flying-chess.webp"],
     title: "Flying Chess",
     tags: ["C++", "Text-based", "Console Game"],
