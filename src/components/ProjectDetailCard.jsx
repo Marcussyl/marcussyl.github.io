@@ -1,7 +1,9 @@
 import { motion } from "motion/react";
+import { trackEvent } from "@/lib/analytics";
 
 const ProjectDetailCard = ({
   setOpenProjectId,
+  projectId,
   title,
   desc,
   features,
@@ -13,6 +15,15 @@ const ProjectDetailCard = ({
   thumbImgs,
   modalRef
 }) => {
+  const trackProjectLink = (linkType, linkUrl) => {
+    trackEvent("project_click", {
+      project_id: projectId,
+      project_name: title,
+      link_type: linkType,
+      link_url: linkUrl,
+    });
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 100 }}
@@ -98,6 +109,7 @@ const ProjectDetailCard = ({
                   href={githubLink}
                   target="_blank"
                   className="glowing-btn flex-1"
+                  onClick={() => trackProjectLink("github", githubLink)}
                   whileTap={{ scale: 0.92 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
@@ -116,6 +128,7 @@ const ProjectDetailCard = ({
                   href={liveLink}
                   target="_blank"
                   className="border-grayish-white flex flex-1 cursor-pointer items-center justify-center gap-3 border-2 px-2 py-2 text-sm md:text-base"
+                  onClick={() => trackProjectLink("live", liveLink)}
                   whileTap={{ scale: 0.92 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
@@ -132,6 +145,7 @@ const ProjectDetailCard = ({
                   href={videoLink}
                   target="_blank"
                   className="border-grayish-white flex flex-1 cursor-pointer items-center justify-center gap-3 border-2 px-2 py-2 text-sm md:text-base"
+                  onClick={() => trackProjectLink("demo", videoLink)}
                   whileTap={{ scale: 0.92 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
