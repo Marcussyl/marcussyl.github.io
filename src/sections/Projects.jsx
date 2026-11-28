@@ -7,6 +7,7 @@ import {
   enableBodyScroll,
   clearAllBodyScrollLocks,
 } from "body-scroll-lock";
+import { trackEvent } from "@/lib/analytics";
 
 const projects = [
   {
@@ -223,6 +224,12 @@ export const Projects = () => {
 
   const handleCardClick = (e) => {
     const projectId = e.currentTarget.getAttribute("data-project-id");
+    const project = projects.find((item) => item.projectId === projectId);
+    trackEvent("project_click", {
+      project_id: projectId,
+      project_name: project?.title,
+      link_type: "card",
+    });
     setOpenProjectId(projectId);
   };
 
@@ -318,6 +325,7 @@ export const Projects = () => {
           {openProjectId === project.projectId && (
             <ProjectDetailCard
               setOpenProjectId={setOpenProjectId}
+              projectId={project.projectId}
               title={project.title}
               desc={project.overview}
               features={project.features}

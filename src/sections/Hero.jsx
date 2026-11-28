@@ -2,6 +2,7 @@ import { HeroTag } from "@/components/HeroTag";
 import { motion } from "motion/react";
 import { useTypewriter } from "@/components/useTypewriter";
 import TextRotate from "@/fancy/components/text/text-rotate";
+import { trackEvent } from "@/lib/analytics";
 
 export const HeroSection = () => {
   const displayText = useTypewriter(
@@ -37,7 +38,16 @@ export const HeroSection = () => {
         {displayText}
         <span className="animate-blinking-caret inline-block h-3 w-3 border-b-2"></span>
       </p>
-      <a href="/assets/Marcus_Sze_CV.pdf" download="Marcus_Sze_CV.pdf">
+      <a
+        href="/assets/Marcus_Sze_CV.pdf"
+        download="Marcus_Sze_CV.pdf"
+        onClick={() =>
+          trackEvent("resume_download", {
+            file_name: "Marcus_Sze_CV.pdf",
+            file_url: "/assets/Marcus_Sze_CV.pdf",
+          })
+        }
+      >
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
